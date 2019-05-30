@@ -1,0 +1,37 @@
+<html>
+<head>
+<embed
+	src="feelgood.mp3"
+	width="0"
+	height="0"
+	loop="false"
+	autostart="true">
+<title>TeaHacheEl</title>
+</head>
+<body bgcolor=#808383 text=#FFFFFF background="code.jpg">
+<center>
+	<p style="display:true" id="THLSim"><font style="font-size:100px" face="Impact" color="yellow">THL INTRO SIMULATOR</font></p>
+	<p style="display:none"  id="goAway"><font style="font-size:100px" face="Impact" color="yellow">GO AWAY</font></p>
+	<img src="default.gif" width="700" height="600" style="display:none" id="myGif">
+	<video id="myVideo" width="700" height="600" src="intro.mp4" style="display:true">
+	<script type="text/javascript">
+		setTimeout(function(){
+		  document.getElementById("myVideo").play();
+		}, 5000);
+	</script>
+	<script>
+	setTimeout(function(){
+		  document.getElementById("myVideo").style = "display:none";
+		  document.getElementById("myGif").style = "display:true";
+		}, 15000);
+	</script>
+	<script>
+	setTimeout(function(){
+		  document.getElementById("myGif").style = "display:none";
+		  document.getElementById("THLSim").style = "display:none";
+		  document.getElementById("goAway").style = "display:true";
+		}, 41000);
+	</script>
+</video>
+</body>   
+</html>
